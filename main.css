@@ -1,0 +1,98 @@
+body 
+{
+	background-image: url("background.jpg");
+}
+
+p, h1, h2, li 
+{
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+}
+h2
+{
+	text-shadow: 2px 2px 5px #b03b0c;
+	text-indent: 20px;
+	
+}
+h1
+{
+	text-shadow: 2px 2px 5px #8a3427;
+	text-indent: 40px;
+	padding: 40px;
+	position: relative;
+	animation-name: color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	border-left-style: solid;
+	border-color: rgb(187, 96, 10);
+	border-width: 10px;
+}
+@keyframes color
+{
+	0% {background: rgba(255, 204, 96, 0.72);}
+	50% {background: rgba(245, 224, 29, 0.65);}
+	100% {background: rgba(255, 204, 96, 0.72);}
+}
+p, li
+{
+	text-shadow: 2px 1px #282929;
+}
+table, th, td 
+{
+	border: 1px white;
+	border-collapse: collapse;
+	font-family: Verdana, Geneva, sans-serif;
+	color: white;
+	text-shadow: 2px 1px #282929;
+	background-color: rgba(20, 20, 20, 0.41);
+}
+th, td 
+{
+	padding: 15px;
+}
+/*Used only in tcgcards.html*/
+.tcg 
+{
+	column-count: 3;
+}
+a:link 
+{
+  color: #bdeaf2;
+}
+a:visited
+{
+	color: #5fe3fa;
+}
+a:hover
+{
+	color: #57e3ff;
+}
+a:active
+{
+	color: #0a9ea6;
+}
+span
+{
+	display: block;
+}
+.char
+{
+	padding: 20px;
+	animation-name: move;
+	position: relative;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	width: 300px;
+	height: 300px;
+}
+@keyframes move
+{
+	0% {left:0px;}
+	50% {left:200px;}
+	100% {left:0px;}
+}
+
+* 
+{
+   cursor: url(pokeball.cur),auto;
+}
